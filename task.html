@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plotlist Hero</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(20, 30, 48, 0.85);
+    backdrop-filter: blur(6px);
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+.btn {
+    background: #fff;
+    color: #333;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        linear-gradient(to right, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.4) 30%, rgba(255,255,255,0) 60%),
+        url("https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b") no-repeat center/cover;
+}
+
+/* OVERLAY */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(25, 35, 60, 0.75); /* opacity control */
+}
+
+/* HERO CONTENT */
+.hero-content {
+    position: relative;
+    color: #fff;
+    max-width: 900px;
+}
+
+.hero-content p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #cfd6e6;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.categories {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.cat {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* HOVER EFFECT */
+.cat:hover {
+    transform: translateY(-8px) scale(1.05);
+    background: #6c7a92;
+    color: #fff;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+/* SEARCH BAR */
+.search-box {
+    display: flex;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.search-box select,
+.search-box input {
+    padding: 15px;
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+}
+
+.search-box button {
+    background: #6c7a92;
+    color: #fff;
+    border: none;
+    padding: 0 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ICON SECTION */
+.categories {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.cat {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* SECTION */
+.categories-header {
+    padding: 100px 20px 60px;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+/* MAIN TITLE */
+.categories-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2b2b2b;
+    margin-bottom: 10px;
+}
+
+/* SUBTEXT */
+.categories-header p {
+    font-size: 13px;
+    color: #7a8aa0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        padding: 15px;
+    }
+
+    .navbar {
+        padding: 15px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo" style="display:flex; align-items:center; gap:10px;">
+  
+  <img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/black-logo.png"
+       style="height:40px; width:auto;">
+  
+  
+
+</div>
+    <div class="nav-links">
+        <a href="#">HOME</a>
+        <a href="#">CATEGORY</a>
+        <a href="#">LISTING</a>
+        <a href="#">CONTACT US</a>
+    </div>
+
+    <a href="#" class="btn">+ Add Your Listing</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <p>OVER 36,500+ ACTIVE LISTINGS</p>
+        <h1>Find Nearby Places & Things</h1>
+
+        <div class="search-box">
+            <select>
+                <option>All Areas</option>
+            </select>
+            <input type="text" placeholder="Enter a location">
+            <select>
+                <option>Price Range</option>
+            </select>
+            <button>Search Now</button>
+        </div>
+    </div>
+
+    <div class="categories">
+        <div class="cat"><img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/search-icon-01.png" alt="Search Icon"></div>
+        <div class="cat"><img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/search-icon-02.png" alt="Search Icon"></div>
+        <div class="cat"><img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/search-icon-03.png" alt="Search Icon"></div>
+        <div class="cat"><img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/search-icon-04.png" alt="Search Icon"></div>
+        <div class="cat"><img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/search-icon-05.png" alt="Search Icon"></div>
+        
+    </div>
+</section>
+<section class="categories-header">
+    <h2>Popular Categories</h2>
+    <p>CHECK THEM OUT</p>
+</section>
+<section style="padding:140px 100px; background:#f5f5f5;">
+
+  <div style="display:flex; border-radius:10px; overflow:hidden; background:#2f3349;">
+
+    <!-- LEFT MENU -->
+    <div style="width:260px;">
+
+      <!-- ACTIVE -->
+      <div style="display:flex; align-items:center; gap:15px; padding:25px; background:#2f3349; color:#fff;">
+        <div style="width:50px; height:50px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center;">
+          <img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/search-icon-01.png" style="width:24px;">
+        </div>
+        <span>Apartments</span>
+      </div>
+
+      <!-- ITEMS -->
+      <div style="display:flex; align-items:center; gap:15px; padding:25px; background:#7e8aa0; color:#fff;">
+        <div style="width:50px; height:50px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center;">
+          <img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/search-icon-02.png" style="width:24px;">
+        </div>
+        <span>Food & Life</span>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:15px; padding:25px; background:#7e8aa0; color:#fff;">
+        <div style="width:50px; height:50px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center;">
+          <img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/search-icon-03.png" style="width:24px;">
+        </div>
+        <span>Cars</span>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:15px; padding:25px; background:#7e8aa0; color:#fff;">
+        <div style="width:50px; height:50px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center;">
+          <img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/search-icon-04.png" style="width:24px;">
+        </div>
+        <span>Shopping</span>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:15px; padding:25px; background:#7e8aa0; color:#fff;">
+        <div style="width:50px; height:50px; border-radius:50%; background:#fff; display:flex; align-items:center; justify-content:center;">
+          <img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/search-icon-05.png" style="width:24px;">
+        </div>
+        <span>Traveling</span>
+      </div>
+
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div style="flex:1; display:flex; align-items:center; justify-content:space-between; padding:50px;">
+
+      <!-- TEXT -->
+      <div style="max-width:500px; color:#fff;">
+        <h3 style="font-size:24px; margin-bottom:20px; line-height:1.5;">
+          One Of The Most Trending Stuffs Right Now!
+        </h3>
+
+        <p style="font-size:14px; color:#cfd6e6; line-height:1.8; margin-bottom:25px;">
+          Plot Listing is a responsive website template layout. You can use this section 
+          to describe trending categories or highlight featured content.
+        </p>
+
+        <button style="background:#fff; color:#333; border:none; padding:12px 25px; border-radius:6px; cursor:pointer;">
+          Discover More
+        </button>
+      </div>
+
+      <!-- IMAGE -->
+      <div style="width:380px; height:420px; border-radius:10px; overflow:hidden;">
+        <img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/tabs-image-01.jpg" 
+             style="width:100%; height:100%; object-fit:cover;">
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<section class="categories-header">
+    <h2>Recent Listings</h2>
+    <p>CHECK THEM OUT</p>
+</section>
+<section style="width:100%; background:#f3f3f3; padding:40px 0; font-family:Arial, sans-serif;">
+
+  <div style="width:1100px; margin:0 auto;">
+
+    <!-- Card 1 -->
+    <div style="display:flex; background:#e9e9e9; border-radius:10px; margin-bottom:25px; overflow:hidden;">
+
+      <!-- Image -->
+      <img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-01.jpg"
+           style="width:45%; height:260px; object-fit:cover;">
+
+      <!-- Content -->
+      <div style="padding:25px; flex:1; position:relative;">
+
+        <!-- Title + Reviews -->
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <h3 style="margin:0; font-size:22px;">1. First Apartment Unit</h3>
+          <span style="color:#777;">★★★★★ (18) Reviews</span>
+        </div>
+
+        <p style="margin:8px 0; color:#6c8ebf;">by: Sale Agent</p>
+
+        <p style="margin:10px 0; color:#555;">
+          💲 $450 - $950 / month with taxes
+        </p>
+
+        <p style="margin:8px 0; color:#777;">
+          Details: 2760 sq ft
+        </p>
+
+        <p style="margin:8px 0; color:#777;">
+          🛏 4 Bedrooms
+        </p>
+
+        <p style="margin:8px 0; color:#777;">
+          🛁 4 Bathrooms
+        </p>
+
+        <!-- Button -->
+        <div style="position:absolute; right:25px; bottom:25px;">
+          <button style="padding:10px 18px; border:none; background:#dcdcdc; border-radius:8px; cursor:pointer;">
+            👁 Contact Now
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Card 2 -->
+    <div style="display:flex; background:#e9e9e9; border-radius:10px; margin-bottom:25px; overflow:hidden;">
+
+      <img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-02.jpg"
+           style="width:45%; height:260px; object-fit:cover;">
+
+      <div style="padding:25px; flex:1; position:relative;">
+
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <h3 style="margin:0; font-size:22px;">2. Another House of Gaming</h3>
+          <span style="color:#777;">★★★★★ (24) Reviews</span>
+        </div>
+
+        <p style="margin:8px 0; color:#6c8ebf;">by: Top Sale Agent</p>
+
+        <p style="margin:10px 0; color:#555;">
+          💲 $1,400 - $3,500 / month with taxes
+        </p>
+
+        <p style="margin:8px 0; color:#777;">Details: 1200 sq ft</p>
+        <p style="margin:8px 0; color:#777;">🛏 3 Bedrooms</p>
+        <p style="margin:8px 0; color:#777;">🛁 2 Bathrooms</p>
+
+        <div style="position:absolute; right:25px; bottom:25px;">
+          <button style="padding:10px 18px; border:none; background:#dcdcdc; border-radius:8px; cursor:pointer;">
+            👁 Contact Now
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Card 3 -->
+    <div style="display:flex; background:#e9e9e9; border-radius:10px; overflow:hidden;">
+
+      <img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/listing-06.jpg"
+           style="width:45%; height:260px; object-fit:cover;">
+
+      <div style="padding:25px; flex:1; position:relative;">
+
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <h3 style="margin:0; font-size:22px;">3. Secret Place Hidden House</h3>
+          <span style="color:#777;">★★★★★ (30) Reviews</span>
+        </div>
+
+        <p style="margin:8px 0; color:#6c8ebf;">by: Best Property</p>
+
+        <p style="margin:10px 0; color:#555;">
+          💲 $1,500 - $2,600 / month with taxes
+        </p>
+
+        <p style="margin:8px 0; color:#777;">Details: 1800 sq ft</p>
+        <p style="margin:8px 0; color:#777;">🛏 4 Bedrooms</p>
+        <p style="margin:8px 0; color:#777;">🛁 3 Bathrooms</p>
+
+        <div style="position:absolute; right:25px; bottom:25px;">
+          <button style="padding:10px 18px; border:none; background:#dcdcdc; border-radius:8px; cursor:pointer;">
+            👁 Contact Now
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<section style="background:#f3f3f3; padding:60px 0; font-family:Arial, sans-serif;">
+
+  <div style="width:1100px; margin:0 auto;">
+
+    <!-- Top Footer -->
+    <div style="display:flex; justify-content:space-between;">
+
+      <!-- Left: Logo + Text -->
+      <div style="width:30%;">
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:15px;">
+          <img src="https://templatemo.com/templates/templatemo_564_plot_listing/assets/images/black-logo.png"
+               style="height:45px;">
+          <span style="font-size:22px; font-weight:600;"></span>
+        </div>
+
+        <p style="color:#555; line-height:1.7; font-size:14px;">
+          If you consider that Plot Listing template is useful for your website,
+          please support us a little via PayPal.
+        </p>
+      </div>
+
+      <!-- Middle: Links -->
+      <div style="width:30%;">
+        <h3 style="margin-bottom:15px;">Helpful Links</h3>
+
+        <div style="display:flex; gap:40px;">
+
+          <div>
+            <p style="margin:8px 0; color:#555;">Categories</p>
+            <p style="margin:8px 0; color:#555;">Reviews</p>
+            <p style="margin:8px 0; color:#555;">Listing</p>
+            <p style="margin:8px 0; color:#555;">Contact Us</p>
+          </div>
+
+          <div>
+            <p style="margin:8px 0; color:#555;">About Us</p>
+            <p style="margin:8px 0; color:#555;">Awards</p>
+            <p style="margin:8px 0; color:#555;">Useful Sites</p>
+            <p style="margin:8px 0; color:#555;">Privacy Policy</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right: Contact -->
+      <div style="width:30%;">
+        <h3 style="margin-bottom:15px;">Contact Us</h3>
+
+        <p style="color:#555; margin-bottom:15px;">
+          27th Street of New Town, Digital Villa
+        </p>
+
+        <div style="display:flex; gap:40px; color:#555;">
+          <span>010-020-0340</span>
+          <span>090-080-0760</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <div style="border-top:1px solid #ddd; margin:40px 0;"></div>
+
+    <!-- Bottom -->
+    <div style="text-align:center; color:#666; font-size:14px;">
+      <p style="margin:5px 0;">
+        Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.
+      </p>
+      <p style="margin:5px 0;">
+        Design: TemplateMo
+      </p>
+    </div>
+
+  </div>
+
+</section>
+</body>
+</html>
