@@ -1,79 +1,94 @@
 <!DOCTYPE html>
-<html>
-<body bgcolor="#FFFDD0">
-    <center>
-        <table border="1" width="70%" bgcolor="white">
-            <tr>
-                <td>
-                    <center><h1>Student Registration forms</h1></center>
-                    <hr style="border: 1px solid #000000;">
-                    
-                    <form action="#" method="post">
-                        <label for="name">Full Name:</label><br>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
-                        
-                        <label for="email">Email Address:</label><br>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body style="background-color: #FFFDD0; display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+    <main style="width: 70%; background-color: white; border: 1px solid #000; padding: 20px; border-radius: 8px;">
+        <header>
+            <h1 style="text-align: center;">Student Registration Forms</h1>
+            <hr>
+        </header>
 
-                        <label for="father_name">Father's Name:</label><br>
-                        <input type="text" id="name" name="name" placeholder="Enter your father's name" required><br><br>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
 
-                        <label for="name">Mother's Name:</label><br>
-                        <input type="text" id="name" name="name" placeholder="Enter your mother's name" required><br><br>
-                        
-                        <label for="phone">Phone Number:</label><br>
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
 
-                         <label for="phone"> Alternate Phone Number:</label><br>
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your alternate phone number"><br><br>
-                        
-                        <label for="priority">Department:</label><br>
-                        <input type="radio" id="cse" name="dept" value="CSE">
-                        <label for="cse">CSE</label>
-                        <input type="radio" id="it" name="dept" value="IT">
-                        <label for="it">IT</label>
-                        <input type="radio" id="ece" name="dept" value="ECE">
-                        <label for="ece">ECE</label>
-                        <input type="radio" id="eee" name="dept" value="EEE">
-                        <label for="eee">EEE</label>
-                        <input type="radio" id="civil" name="dept" value="CIVIL">
-                        <label for="civil">CIVIL</label>
-                        <br><br>
+                <label for="father_name">Father's Name:</label><br>
+                <input type="text" id="father_name" name="father_name" placeholder="Enter your father's name" required><br><br>
 
-                        <label for="subject">Clubs:</label><br>
-                        <select id="subject" name="subject">
-                            <option value="">Select a club</option>
-                            <option value="tech_club">Tech Club</option>
-                            <option value="coding_club">Coding Club</option>
-                            <option value="debate_club">Debate Club</option>
-                            <option value="literary_club">Literary Club</option>
-                        </select><br><br>
-                        
-                        <label for="priority">Gender:</label><br>
-                        <input type="radio" id="low" name="priority" value="low">
-                        <label for="low">Male</label>
-                        <input type="radio" id="medium" name="priority" value="medium" checked>
-                        <label for="medium">Female</label>
-                        <br><br>
-                        
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="6" cols="50" placeholder="Enter your message here..." required></textarea><br><br>
-                        
-                        <label for="attachment">Attachment (optional):</label><br>
-                        <input type="file" id="attachment" name="attachment"><br><br>
-                        
-                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
-                        <label for="newsletter">Subscribe to Clubs Groups Newsletter for Latest Updates</label><br><br>
-                        
-                        <input type="checkbox" id="terms" name="terms" required>
-                        <label for="terms">I agree to the <a href="#">terms and conditions</a></label><br><br>
-                        
-                        <button type="submit">Submit</button>
-                        <button type="reset">Reset Form</button>
-                    </form>
-                </td>
-            </tr>
-        </table>
-    </center>
+                <label for="mother_name">Mother's Name:</label><br>
+                <input type="text" id="mother_name" name="mother_name" placeholder="Enter your mother's name" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"><br><br>
+
+                <label for="alt_phone">Alternate Phone Number:</label><br>
+                <input type="tel" id="alt_phone" name="alt_phone" placeholder="Enter your alternate phone number"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Academic Information</legend>
+
+                <label for="dept">Department:</label><br>
+                <input type="radio" id="cse" name="dept" value="CSE">
+                <label for="cse">CSE</label>
+                <input type="radio" id="it" name="dept" value="IT">
+                <label for="it">IT</label>
+                <input type="radio" id="ece" name="dept" value="ECE">
+                <label for="ece">ECE</label>
+                <input type="radio" id="eee" name="dept" value="EEE">
+                <label for="eee">EEE</label>
+                <input type="radio" id="civil" name="dept" value="CIVIL">
+                <label for="civil">CIVIL</label>
+                <br><br>
+
+                <label for="clubs">Clubs:</label><br>
+                <select id="clubs" name="clubs" required>
+                    <option value="">Select a club</option>
+                    <option value="tech_club">Tech Club</option>
+                    <option value="coding_club">Coding Club</option>
+                    <option value="debate_club">Debate Club</option>
+                    <option value="literary_club">Literary Club</option>
+                </select><br><br>
+
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="6" cols="50" placeholder="Enter your message here..." required></textarea><br><br>
+
+                <label for="attachment">Attachment (optional):</label><br>
+                <input type="file" id="attachment" name="attachment"><br><br>
+
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Subscribe to Clubs Groups Newsletter for Latest Updates</label><br><br>
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="#">terms and conditions</a></label><br><br>
+            </fieldset>
+
+            <div style="text-align: center;">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
