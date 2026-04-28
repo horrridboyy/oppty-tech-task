@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Card Interface</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            color: white;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 14px;
+        }
+
+        .container {
+            margin-top: 120px;
+            padding: 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card-text {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .hidden-message {
+            display: none;
+            visibility: hidden;
+            background: #f0f4ff;
+            color: #667eea;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+            border-left: 3px solid #667eea;
+        }
+
+        .card:hover .hidden-message {
+            display: block;
+            visibility: visible;
+        }
+
+        .card-button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .card-button:hover {
+            opacity: 0.9;
+        }
+
+        .help-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            z-index: 200;
+        }
+
+        .help-button:hover {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Notification Center</h1>
+        <p>Stay updated with our latest notifications</p>
+    </header>
+
+    <div class="container">
+        <div class="cards-container">
+            <div class="card">
+                <span class="badge">1</span>
+                <h2 class="card-title">System Update</h2>
+                <p class="card-text">Your system has been updated to the latest version.</p>
+                <div class="hidden-message">New Notification!</div>
+                <button class="card-button">Learn More</button>
+            </div>
+
+            <div class="card">
+                <span class="badge">2</span>
+                <h2 class="card-title">Security Alert</h2>
+                <p class="card-text">We detected unusual activity on your account.</p>
+                <div class="hidden-message">New Notification!</div>
+                <button class="card-button">Secure Now</button>
+            </div>
+
+            <div class="card">
+                <span class="badge">3</span>
+                <h2 class="card-title">New Feature</h2>
+                <p class="card-text">Check out our brand new dashboard feature.</p>
+                <div class="hidden-message">New Notification!</div>
+                <button class="card-button">Explore</button>
+            </div>
+
+            <div class="card">
+                <span class="badge">4</span>
+                <h2 class="card-title">Performance Update</h2>
+                <p class="card-text">System performance has been optimized for faster loading.</p>
+                <div class="hidden-message">New Notification!</div>
+                <button class="card-button">View Details</button>
+            </div>
+
+            <div class="card">
+                <span class="badge">5</span>
+                <h2 class="card-title">Backup Complete</h2>
+                <p class="card-text">Your data backup has been completed successfully.</p>
+                <div class="hidden-message">New Notification!</div>
+                <button class="card-button">Verify</button>
+            </div>
+
+            <div class="card">
+                <span class="badge">6</span>
+                <h2 class="card-title">Maintenance Scheduled</h2>
+                <p class="card-text">Scheduled maintenance will occur on Sunday night.</p>
+                <div class="hidden-message">New Notification!</div>
+                <button class="card-button">Schedule</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="help-button" title="Help">?</button>
+</body>
+</html>
