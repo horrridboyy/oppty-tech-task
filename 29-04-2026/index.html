@@ -206,6 +206,61 @@
   font-weight: bold;
   font-size: 14px;
 }
+
+.site-footer {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 48px 60px 24px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-col h3 {
+  margin: 0 0 16px;
+  font-size: 18px;
+}
+
+.footer-col p {
+  margin: 6px 0;
+  line-height: 1.6;
+  color: #d0d0d0;
+}
+
+.footer-col a {
+  color: #d0d0d0;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 32px;
+  padding-top: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .site-footer {
+    padding: 40px 20px 20px;
+  }
+}
   </style>
 </head>
 <body>
@@ -291,37 +346,35 @@
   </div>
 </section>
   </main>
-  <footer style="background-color:#1e1e1e;color:#ffffff;padding:40px 60px;font-family:Arial,sans-serif;">
-  <div style="display:flex;justify-content:space-between;flex-wrap:wrap;">
-    
-    <div style="max-width:250px;">
-      <h3 style="margin-bottom:15px;">Horizon University</h3>
-      <p style="margin:5px 0;">123 University Blvd.</p>
-      <p style="margin:5px 0;">Innovation City, ST 12345</p>
-      <p style="margin:5px 0;">Phone: (555) 123-4567</p>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Horizon University</h3>
+        <p>123 University Blvd.</p>
+        <p>Innovation City, ST 12345</p>
+        <p>Phone: (555) 123-4567</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">Financial Aid</a></p>
+        <p><a href="#">Student Portal</a></p>
+        <p><a href="#">Alumni</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <p><a href="#">Library</a></p>
+        <p><a href="#">Campus Map</a></p>
+        <p><a href="#">Career Center</a></p>
+        <p><a href="#">Athletics</a></p>
+      </div>
     </div>
 
-    <div>
-      <h3 style="margin-bottom:15px;">Quick Links</h3>
-      <p style="margin:5px 0;"><a href="#" style="color:#ccc;text-decoration:none;">About Us</a></p>
-      <p style="margin:5px 0;"><a href="#" style="color:#ccc;text-decoration:none;">Financial Aid</a></p>
-      <p style="margin:5px 0;"><a href="#" style="color:#ccc;text-decoration:none;">Student Portal</a></p>
-      <p style="margin:5px 0;"><a href="#" style="color:#ccc;text-decoration:none;">Alumni</a></p>
+    <div class="footer-bottom">
+      © 2026 Horizon University. All Rights Reserved.
     </div>
-
-    <div>
-      <h3 style="margin-bottom:15px;">Resources</h3>
-      <p style="margin:5px 0;"><a href="#" style="color:#ccc;text-decoration:none;">Library</a></p>
-      <p style="margin:5px 0;"><a href="#" style="color:#ccc;text-decoration:none;">Campus Map</a></p>
-      <p style="margin:5px 0;"><a href="#" style="color:#ccc;text-decoration:none;">Career Center</a></p>
-      <p style="margin:5px 0;"><a href="#" style="color:#ccc;text-decoration:none;">Athletics</a></p>
-    </div>
-
-  </div>
-
-  <div style="border-top:1px solid #444;margin-top:30px;padding-top:15px;text-align:center;font-size:14px;color:#ccc;">
-    © 2026 Horizon University. All Rights Reserved.
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
