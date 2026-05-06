@@ -1,315 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studyfetch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-<nav class="navbar">
-  <div class="nav-container">
-    
-    <div class="logo">
-      <img src="https://www.studyfetch.com/_next/image?url=%2Flogo-text-only.png&w=64&q=75" alt="Study Fetch Logo" />
-    </div>
+    <nav class="navbar">
+        <div class="nav-container">
 
-    <ul class="nav-links">
-      <li class="dropdown">
-        <a href="#">Features ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Flashcards</a></li>
-          <li><a href="#">AI Notes</a></li>
-          <li><a href="#">Quiz Generator</a></li>
-        </ul>
-      </li>
+            <div class="logo">
+                <img src="https://www.studyfetch.com/_next/image?url=%2Flogo-text-only.png&w=64&q=75"
+                    alt="Study Fetch Logo" />
+            </div>
 
-      <li class="dropdown">
-        <a href="#">Educators & Enterprise ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">For Teachers</a></li>
-          <li><a href="#">For Schools</a></li>
-          <li><a href="#">Enterprise Plans</a></li>
-        </ul>
-      </li>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#">Features ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Flashcards</a></li>
+                        <li><a href="#">AI Notes</a></li>
+                        <li><a href="#">Quiz Generator</a></li>
+                    </ul>
+                </li>
 
-      <li class="dropdown">
-        <a href="#">News ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Updates</a></li>
-          <li><a href="#">Press</a></li>
-        </ul>
-      </li>
-    </ul>
+                <li class="dropdown">
+                    <a href="#">Educators & Enterprise ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">For Teachers</a></li>
+                        <li><a href="#">For Schools</a></li>
+                        <li><a href="#">Enterprise Plans</a></li>
+                    </ul>
+                </li>
 
-    <div class="nav-actions">
-      <a href="#" class="btn primary">Start for Free</a>
-      <a href="#" class="btn outline">Login</a>
-    </div>
+                <li class="dropdown">
+                    <a href="#">News ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Updates</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </li>
+            </ul>
 
-  </div>
-</nav>
-<section class="hero">
-  <h1>
-    Learning that adapts<br />
-    to <span class="italic">you</span>
-  </h1>
+            <div class="nav-actions">
+                <a href="#" class="btn primary">Start for Free</a>
+                <a href="#" class="btn outline">Login</a>
+            </div>
 
-  <button class="cta">Start learning</button>
-
-  <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Fone.webp&w=256&q=75" class="float f1" />
-  <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Ftwo.webp&w=256&q=75" class="float f2" />
-  <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Fthree.webp&w=256&q=75" class="float f3" />
-  <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Ffour.webp&w=256&q=75" class="float f4" />
-  <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Ffive.webp&w=256&q=75" class="float f5" />
-  <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Fsix.webp&w=256&q=75" class="float f6" />
-  <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Fseven.webp&w=256&q=75" class="float f7" />
-  <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Feight.webp&w=256&q=75" class="float f8" />
-</section>
-<!-- subhero -->
-<section class="learning-platform">
-  <div class="learning-container">
-    <h1 class="learning-title">The trusted AI learning platform for students.</h1>
-    
-    <div class="learning-stats">
-        <div class="learning-divider"></div>
-      <div class="learning-stat-block">
-        
-        <h2>7M+</h2>
-        <p>Users Worldwide</p>
-      </div>
-
-      <div class="learning-divider"></div>
-
-      <div class="learning-stat-block">
-        <h2>92%</h2>
-        <p>of Frequent Active Users Reported Better Grades</p>
-      </div>
-    </div>
-
-    <button class="learning-button">Start for Free</button>
-  </div>
-</section>
-<section class="demo-section">
-  <p class="demo-link"><b>Watch a Demo</b></p>
-  
-  <h1 class="demo-title">
-    How your notes become a complete<br>
-    study system
-  </h1>
-
-  <div class="video-wrapper">
-    <video autoplay muted loop playsinline controls>
-      <source src="https://studyfetchcdn.studyfetch.com/trailer.mp4" type="video/mp4">
-    </video>
-  </div>
-</section>
-<section class="demo-section">
-  <p class="demo-link"><b>Features</b></p>
-  
-  <h1 class="demo-title">
-    Unleash the power of your course <br>materials
-  </h1>
-  <p>Upload your materials once and unlock a suite of tools designed to help you understand <br>faster, retain longer, and stress less.</p>
-  <div class="tabs">
-
-<div class="tabs">
-
-<div class="tab-head">
-  <input type="radio" name="tab" id="t1" checked>
-  <label for="t1">Study Plan</label>
-
-  <input type="radio" name="tab" id="t2">
-  <label for="t2">Spark.E</label>
-
-  <input type="radio" name="tab" id="t3">
-  <label for="t3">Tutor Me</label>
-
-  <input type="radio" name="tab" id="t4">
-  <label for="t4">Live Lecture</label>
-
-  <input type="radio" name="tab" id="t5">
-  <label for="t5">Notes</label>
-
-  <input type="radio" name="tab" id="t6">
-  <label for="t6">Arcade</label>
-</div>
-
-<div class="panel c1">
-  <div class="left"><img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Ffeatures%2Fstudy-plan.png&w=640&q=75"></div>
-  <div class="right">
-    <h2>Know exactly what comes next</h2>
-    <p>Spark.E builds a personalized study schedule around your materials and deadlines, breaking everything into clear milestones so you always know exactly where to focus.</p>
-    <div class="btns">
-      <button class="primary">Start Now</button>
-      <button class="secondary">Explore</button>
-    </div>
-  </div>
-</div>
-
-<div class="panel c2">
-  <div class="left"><img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Ffeatures%2Fsparke.png&w=640&q=75"></div>
-  <div class="right">
-    <h2>Your AI tutor that actually knows your coursework</h2>
-    <p>Trained on your uploaded notes and materials, Spark.E answers questions, generates quizzes, and explains concepts around the clock via chat or voice.</p>
-    <div class="btns">
-      <button class="primary">Start Now</button>
-      <button class="secondary">Explore</button>
-    </div>
-  </div>
-</div>
-
-<div class="panel c3">
-  <div class="left"><img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Ffeatures%2Ftutor-me.png&w=640&q=75"></div>
-  <div class="right">
-    <h2>
-
-Learn at your own pace</h2>
-    <p>Tutor Me adapts to how you study, sets goals, and guides you forward only when you're ready, giving you the experience of a personal tutor available whenever you need one.</p>
-    <div class="btns">
-      <button class="primary">Start Now</button>
-      <button class="secondary">Explore</button>
-    </div>
-  </div>
-</div>
-
-<div class="panel c4">
-  <div class="left"><img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Ffeatures%2Flive-lecture.png&w=640&q=75"></div>
-  <div class="right">
-    <h2>Join live sessions</h2>
-    <p>Attend live lectures and interact in real time.</p>
-    <div class="btns">
-      <button class="primary">Start Now</button>
-      <button class="secondary">Explore</button>
-    </div>
-  </div>
-</div>
-
-<div class="panel c5">
-  <div class="left"><img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Ffeatures%2Fnotes.png&w=640&q=75"></div>
-  <div class="right">
-    <h2>Your materials, organized and ready to study</h2>
-    <p>Upload files and get structured notes instantly in different formats.</p>
-    <div class="btns">
-      <button class="primary">Start Now</button>
-      <button class="secondary">Explore</button>
-    </div>
-  </div>
-</div>
-
-<div class="panel c6">
-  <div class="left"><img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Ffeatures%2Farcade.png&w=640&q=75"></div>
-  <div class="right">
-    <h2>Make studying fun</h2>
-    <p>Play interactive games to reinforce your learning.</p>
-    <div class="btns">
-      <button class="primary">Start Now</button>
-      <button class="secondary">Explore</button>
-    </div>
-  </div>
-</div>
-
-</div>
-  </section>
-  <section class="research-section">
-  <div class="top-row">
-    <div class="left">
-      <p class="label">Research</p>
-      <h1>Finals season put us to the test. We passed.</h1>
-    </div>
-    <div class="right">
-      <p class="note">
-        *Based on a study of 1,000 StudyFetch students during December 2024 finals
-      </p>
-      <a href="#">Read the Report →</a>
-    </div>
-  </div>
-
-  <div class="stats-row">
-    <div class="stat">
-      <h2>92%</h2>
-      <p>of regular active users reported grade improvements</p>
-    </div>
-
-    <div class="stat bordered">
-      <h2>85%</h2>
-      <p>of total users reported grade improvements</p>
-    </div>
-
-    <div class="stat">
-      <h2>30%</h2>
-      <p>reduction is average study time reported</p>
-    </div>
-  </div>
-</section>
-<section class="partnership-section">
-  <div class="partnership-container">
-    
-    <div class="image-box">
-      <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fpartnerships_updated.png&w=750&q=75" alt="partnership">
-    </div>
-
-    <div class="content-box">
-      <p class="tag">Partnerships</p>
-      <h2>Expanding access</h2>
-      <p class="desc">
-        StudyFetch partners with NVIDIA to expand access to AI education
-        through workforce readiness programs.
-      </p>
-
-      <div class="buttons">
-        <a href="#" class="btn outline">Learn more</a>
-        <a href="#" class="btn primary">Get Started for Free</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-<section class="demo-section">
-  <p class="demo-link"><b>blog</b></p>
-  
-  <h1 class="demo-title">
-    Uplifting learners
-  </h1>
-  <p>Real students, real breakthroughs with Spark.E</p>
-  </section>
-<section class="blog-section">
-  <div class="blog-container">
-
-    <div class="blog-card">
-      <div class="blog-image-wrapper">
-        <img src="https://www.studyfetch.com/_next/image?url=https%3A%2F%2Fstudyfetchcdn.studyfetch.com%2Fblog-assets%2F1777077441176-y4p9ae1q.jpg&w=750&q=75" alt="Study smarter finals">
-      </div>
-      <div class="blog-content">
-        <h3 class="blog-title">Your Guide to Studying Smarter, Not Harder for Finals Week</h3>
-        <p class="blog-description">Finals season is here. Here's how you can ace them!</p>
-        <div class="blog-meta">
-          <span class="blog-author">StudyFetch</span>
-          <span class="blog-date">April 25, 2026</span>
         </div>
-      </div>
-    </div>
+    </nav>
+    <section class="hero">
+        <h1>
+            Learning that adapts<br />
+            to <span class="italic">you</span>
+        </h1>
 
-    <div class="blog-card">
-      <div class="blog-image-wrapper">
-        <img src="https://www.studyfetch.com/_next/image?url=https%3A%2F%2Fstudyfetchcdn.studyfetch.com%2Fblog-assets%2F1776388297814-sc7rf062.jpg&w=750&q=75" alt="Spark.E text message">
-      </div>
-      <div class="blog-content">
-        <h3 class="blog-title">Spark.E Is Now a Text Message Away</h3>
-        <p class="blog-description">Text With Spark.E Is Now Live!</p>
-        <div class="blog-meta">
-          <span class="blog-author">StudyFetch</span>
-          <span class="blog-date">April 17, 2026</span>
-          
+        <button class="cta">Start learning</button>
+
+        <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Fone.webp&w=256&q=75"
+            class="float f1" />
+        <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Ftwo.webp&w=256&q=75"
+            class="float f2" />
+        <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Fthree.webp&w=256&q=75"
+            class="float f3" />
+        <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Ffour.webp&w=256&q=75"
+            class="float f4" />
+        <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Ffive.webp&w=256&q=75"
+            class="float f5" />
+        <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Fsix.webp&w=256&q=75"
+            class="float f6" />
+        <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Fseven.webp&w=256&q=75"
+            class="float f7" />
+        <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fhero%2Feight.webp&w=256&q=75"
+            class="float f8" />
+    </section>
+    <!-- subhero -->
+    <section class="learning-platform">
+        <div class="learning-container">
+            <h1 class="learning-title">The trusted AI learning platform for students.</h1>
+
+            <div class="learning-stats">
+                <div class="learning-divider"></div>
+                <div class="learning-stat-block">
+
+                    <h2>7M+</h2>
+                    <p>Users Worldwide</p>
+                </div>
+
+                <div class="learning-divider"></div>
+
+                <div class="learning-stat-block">
+                    <h2>92%</h2>
+                    <p>of Frequent Active Users Reported Better Grades</p>
+                </div>
+            </div>
+
+            <button class="learning-button">Start for Free</button>
         </div>
+    </section>
+    <section class="demo-section">
+        <p class="demo-link"><b>Watch a Demo</b></p>
+
+        <h1 class="demo-title">
+            How your notes become a complete<br>
+            study system
+        </h1>
+
+        <div class="video-wrapper">
+            <video autoplay muted loop playsinline controls>
+                <source src="https://studyfetchcdn.studyfetch.com/trailer.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <section class="demo-section">
+        <p class="demo-link"><b>Features</b></p>
+
+        <h1 class="demo-title">
+            Unleash the power of your course <br>materials
+        </h1>
+        <p>Upload your materials once and unlock a suite of tools designed to help you understand <br>faster, retain
+            longer, and stress less.</p>
+        <div class="tabs">
+
+            <div class="tabs">
+
+                <div class="tab-head">
+                    <input type="radio" name="tab" id="t1" checked>
+                    <label for="t1">Study Plan</label>
+
+                    <input type="radio" name="tab" id="t2">
+                    <label for="t2">Spark.E</label>
+
+                    <input type="radio" name="tab" id="t3">
+                    <label for="t3">Tutor Me</label>
+
+                    <input type="radio" name="tab" id="t4">
+                    <label for="t4">Live Lecture</label>
+
+                    <input type="radio" name="tab" id="t5">
+                    <label for="t5">Notes</label>
+
+                    <input type="radio" name="tab" id="t6">
+                    <label for="t6">Arcade</label>
+                </div>
+
+                <div class="panel c1">
+                    <div class="left"><img
+                            src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Ffeatures%2Fstudy-plan.png&w=640&q=75">
+                    </div>
+                    <div class="right">
+                        <h2>Know exactly what comes next</h2>
+                        <p>Spark.E builds a personalized study schedule around your materials and deadlines, breaking
+                            everything into clear milestones so you always know exactly where to focus.</p>
+                        <div class="btns">
+                            <button class="primary">Start Now</button>
+                            <button class="secondary">Explore</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel c2">
+                    <div class="left"><img
+                            src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Ffeatures%2Fsparke.png&w=640&q=75">
+                    </div>
+                    <div class="right">
+                        <h2>Your AI tutor that actually knows your coursework</h2>
+                        <p>Trained on your uploaded notes and materials, Spark.E answers questions, generates quizzes,
+                            and explains concepts around the clock via chat or voice.</p>
+                        <div class="btns">
+                            <button class="primary">Start Now</button>
+                            <button class="secondary">Explore</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel c3">
+                    <div class="left"><img
+                            src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Ffeatures%2Ftutor-me.png&w=640&q=75">
+                    </div>
+                    <div class="right">
+                        <h2>
+
+                            Learn at your own pace</h2>
+                        <p>Tutor Me adapts to how you study, sets goals, and guides you forward only when you're ready,
+                            giving you the experience of a personal tutor available whenever you need one.</p>
+                        <div class="btns">
+                            <button class="primary">Start Now</button>
+                            <button class="secondary">Explore</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel c4">
+                    <div class="left"><img
+                            src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Ffeatures%2Flive-lecture.png&w=640&q=75">
+                    </div>
+                    <div class="right">
+                        <h2>Join live sessions</h2>
+                        <p>Attend live lectures and interact in real time.</p>
+                        <div class="btns">
+                            <button class="primary">Start Now</button>
+                            <button class="secondary">Explore</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel c5">
+                    <div class="left"><img
+                            src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Ffeatures%2Fnotes.png&w=640&q=75">
+                    </div>
+                    <div class="right">
+                        <h2>Your materials, organized and ready to study</h2>
+                        <p>Upload files and get structured notes instantly in different formats.</p>
+                        <div class="btns">
+                            <button class="primary">Start Now</button>
+                            <button class="secondary">Explore</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel c6">
+                    <div class="left"><img
+                            src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Ffeatures%2Farcade.png&w=640&q=75">
+                    </div>
+                    <div class="right">
+                        <h2>Make studying fun</h2>
+                        <p>Play interactive games to reinforce your learning.</p>
+                        <div class="btns">
+                            <button class="primary">Start Now</button>
+                            <button class="secondary">Explore</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+    <section class="research-section">
+        <div class="top-row">
+            <div class="left">
+                <p class="label">Research</p>
+                <h1>Finals season put us to the test. We passed.</h1>
+            </div>
+            <div class="right">
+                <p class="note">
+                    *Based on a study of 1,000 StudyFetch students during December 2024 finals
+                </p>
+                <a href="#">Read the Report →</a>
+            </div>
+        </div>
+
+        <div class="stats-row">
+            <div class="stat">
+                <h2>92%</h2>
+                <p>of regular active users reported grade improvements</p>
+            </div>
+
+            <div class="stat bordered">
+                <h2>85%</h2>
+                <p>of total users reported grade improvements</p>
+            </div>
+
+            <div class="stat">
+                <h2>30%</h2>
+                <p>reduction is average study time reported</p>
+            </div>
+        </div>
+    </section>
+    <section class="partnership-section">
+        <div class="partnership-container">
+
+            <div class="image-box">
+                <img src="https://www.studyfetch.com/_next/image?url=%2Flanding%2Fpartnerships_updated.png&w=750&q=75"
+                    alt="partnership">
+            </div>
+
+            <div class="content-box">
+                <p class="tag">Partnerships</p>
+                <h2>Expanding access</h2>
+                <p class="desc">
+                    StudyFetch partners with NVIDIA to expand access to AI education
+                    through workforce readiness programs.
+                </p>
+
+                <div class="buttons">
+                    <a href="#" class="btn outline">Learn more</a>
+                    <a href="#" class="btn primary">Get Started for Free</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="faq-section">
+  <div class="faq-left">
+    <h2 class="faq-title">Frequently Asked <br>Questions</h2>
+    <p class="faq-description">Find answers about StudyFetch and how it works</p>
+  </div>
+
+  <div class="faq-right">
+    <div class="faq-item">
+      <input type="checkbox" id="faq1" class="faq-toggle">
+      <label for="faq1" class="faq-question">Will StudyFetch actually help me do better on my exams?</label>
+      <div class="faq-answer">
+        Yes. StudyFetch builds a personalized study plan from your materials, breaking them into an ordered sequence of topics so you learn things the right way. Instead of guessing what to review, you get flashcards, quizzes, practice tests, and more built from exactly what you need to know.
       </div>
     </div>
 
+    <div class="faq-item">
+      <input type="checkbox" id="faq2" class="faq-toggle">
+      <label for="faq2" class="faq-question">How does StudyFetch know what I need to study?</label>
+      <div class="faq-answer">
+        StudyFetch reads your materials and identifies the key topics, then organizes them into a study plan that tells you what to learn, in what order, and tracks what you've already covered. You always know exactly where you are and what to focus on next.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq3" class="faq-toggle">
+      <label for="faq3" class="faq-question">How do I know if I'm actually learning?</label>
+      <div class="faq-answer">
+        StudyFetch shows you which topics you've already covered and uses your study plan to surface what you still need to know. It organizes your materials into the most effective learning order, so you always know where you stand and what to focus on next.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq4" class="faq-toggle">
+      <label for="faq4" class="faq-question">What if my exam is tomorrow?</label>
+      <div class="faq-answer">
+        Your study plan has a cram mode that picks out the most important things you need to know for your exam. Even if you're starting the night before, you get the key concepts front and center so you can make the most of the time you have.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq5" class="faq-toggle">
+      <label for="faq5" class="faq-question">Who uses StudyFetch?</label>
+      <div class="faq-answer">
+        Top students are already using StudyFetch to prepare for the MCAT, NCLEX, LSAT, GMAT, board exams, AP exams, and everything in between. Whatever you're studying for, StudyFetch helps you study smarter and show up ready.
+      </div>
+    </div>
   </div>
-  <div class="blog-see-more-wrapper">
-  <button class="blog-see-more-btn">See more</button>
-</div>
 </section>
+    <section class="demo-section">
+        <p class="demo-link"><b>blog</b></p>
+
+        <h1 class="demo-title">
+            Uplifting learners
+        </h1>
+        <p>Real students, real breakthroughs with Spark.E</p>
+    </section>
+    <section class="blog-section">
+        <div class="blog-container">
+
+            <div class="blog-card">
+                <div class="blog-image-wrapper">
+                    <img src="https://www.studyfetch.com/_next/image?url=https%3A%2F%2Fstudyfetchcdn.studyfetch.com%2Fblog-assets%2F1777077441176-y4p9ae1q.jpg&w=750&q=75"
+                        alt="Study smarter finals">
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Your Guide to Studying Smarter, Not Harder for Finals Week</h3>
+                    <p class="blog-description">Finals season is here. Here's how you can ace them!</p>
+                    <div class="blog-meta">
+                        <span class="blog-author">StudyFetch</span>
+                        <span class="blog-date">April 25, 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-image-wrapper">
+                    <img src="https://www.studyfetch.com/_next/image?url=https%3A%2F%2Fstudyfetchcdn.studyfetch.com%2Fblog-assets%2F1776388297814-sc7rf062.jpg&w=750&q=75"
+                        alt="Spark.E text message">
+                </div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Spark.E Is Now a Text Message Away</h3>
+                    <p class="blog-description">Text With Spark.E Is Now Live!</p>
+                    <div class="blog-meta">
+                        <span class="blog-author">StudyFetch</span>
+                        <span class="blog-date">April 17, 2026</span>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="blog-see-more-wrapper">
+            <button class="blog-see-more-btn">See more</button>
+        </div>
+    </section>
+    <footer class="site-footer">
+  <div class="footer-cta">
+    <div class="footer-cta-text">
+      <h1 class="footer-heading">Ready to transform how you study?</h1>
+      <p class="footer-subtext">Get tips on studying smarter and updates on new features</p>
+    </div>
+
+    <div class="footer-cta-actions">
+      <button class="btn-primary">Start for Free</button>
+      <button class="btn-outline">Login</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer-grid">
+    <div class="footer-column">
+      <h4>Website</h4>
+      <a href="#">Home</a>
+      <a href="#">Login</a>
+      <a href="#">Sign Up</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Company</h4>
+      <a href="#">Blog</a>
+      <a href="#">FAQ</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Enterprise Terms</a>
+      <a href="#">Status</a>
+      <a href="#">Join the Team</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Helpful</h4>
+      <a href="#">Email Support</a>
+      <a href="#">Feedback</a>
+      <a href="#">Question Bank</a>
+      <a href="#">Documentation</a>
+      <a href="#">Creators</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Educators & Institutions</h4>
+      <a href="#">For Teachers</a>
+      <a href="#">For Institutions</a>
+      <a href="#">Our Mission</a>
+      <a href="#">Our Principles</a>
+      <a href="#">For Parents</a>
+      <a href="#">Accelerate the workforce</a>
+      <a href="#">Honen</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Use Cases</h4>
+      <a href="#">AI Writing Assistance</a>
+      <a href="#">Document Summarization</a>
+      <a href="#">Flashcard Generation</a>
+      <a href="#">Quiz and Test Preparation</a>
+      <a href="#">Subject-Specific AI Study Aids</a>
+      <a href="#">Video Learning Tools</a>
+      <a href="#">PDF to Brainrot</a>
+      <a href="#">Games - PDF to Game</a>
+      <a href="#">Explainer Videos</a>
+    </div>
+
+    <div class="footer-column">
+      <h4>Our Features</h4>
+      <a href="#">Notes AI</a>
+      <a href="#">Flashcards AI</a>
+      <a href="#">AI Quizzes</a>
+      <a href="#">Spark.E AI</a>
+      <a href="#">Text Spark.E</a>
+      <a href="#">Spark.E Visuals</a>
+      <a href="#">Record Live Lecture</a>
+      <a href="#">Essay Grader</a>
+      <a href="#">Audio Recap</a>
+      <a href="#">Call With Spark.e</a>
+      <a href="#">Explainer Video</a>
+      <a href="#">PDF to Game</a>
+    </div>
+  </div>
+
+ <div class="footer-bottom">
+  <div class="footer-brand">
+    <img src="https://www.studyfetch.com/_next/image?url=%2Flogo-text-only.png&w=64&q=75" alt="StudyFetch Logo" class="brand-logo">
+
+    <hr>
+
+    <div class="footer-controls">
+      <select class="language-select">
+        <option>English (US)</option>
+        <option>Spanish</option>
+        <option>French</option>
+        <option>German</option>
+        <option>Hindi</option>
+      </select>
+
+      <button class="accessibility-btn">Show Accessibility Settings</button>
+    </div>
+
+    <div class="footer-badge">
+      <img src="./assets/safety-transparent.png" alt="Security Badge">
+    </div>
+
+    <p class="footer-copy">© 2026 StudyFetch Inc. All Rights Reserved.</p>
+  </div>
+
+  <div class="footer-socials">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+</div>
+</footer>
+    
 </body>
+
 </html>
