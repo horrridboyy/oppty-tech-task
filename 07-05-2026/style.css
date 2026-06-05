@@ -1,7 +1,6 @@
 *{
     margin:0;
     padding:0;
-    box-sizing:border-box;
 }
 
 body{
@@ -246,7 +245,7 @@ body {
 
 .program-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, );
   border : #0f4d46 solid 1px;
 }
 
@@ -362,11 +361,8 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-
-
-
   background-size: 22px 22px;
-  pointer-events: none;
+  
 }
 
 .future-container {
@@ -684,7 +680,6 @@ body {
   width:50%;
   height:600px;
   position:relative;
-  isolation:isolate;
 }
 
 .image-stack .img{
@@ -696,7 +691,7 @@ body {
   box-shadow:0 20px 50px rgba(0,0,0,0.25);
   transition:transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.45s ease;
   transform-origin:center;
-  backface-visibility:hidden;
+  
 }
 
 .img-back{
@@ -736,7 +731,6 @@ body {
   background:#ffffff;
   border-radius:14px;
   box-shadow:0 14px 40px rgba(0,0,0,0.16);
-  pointer-events:none;
   animation:placementFloat 3.8s ease-in-out infinite;
 }
 
@@ -770,7 +764,7 @@ body {
 
 @keyframes placementFloat{
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
+  50% { transform: translateY(-30px); }
 }
 .campus-life{
   width:100%;
