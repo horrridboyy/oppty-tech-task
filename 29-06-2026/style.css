@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:linear-gradient(135deg,#ffe9c6,#ffd7a8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:1000px;
+    background:white;
+    display:flex;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.left{
+    width:55%;
+    padding:25px;
+    background:#fffaf2;
+}
+
+.right{
+    width:45%;
+    padding:25px;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+label{
+    font-weight:bold;
+    display:block;
+    margin-bottom:10px;
+}
+
+select{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:2px solid #ddd;
+}
+
+.sizes{
+    display:flex;
+    gap:10px;
+}
+
+.sizes button{
+    flex:1;
+    padding:10px;
+    border:2px solid #ff7a00;
+    background:white;
+    color:#ff7a00;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.sizes button.active{
+    background:#ff7a00;
+    color:white;
+}
+
+.tops label{
+    display:block;
+    margin:6px 0;
+}
+
+.receipt{
+    border:2px dashed #ccc;
+    padding:20px;
+    border-radius:10px;
+    background:#fffdf7;
+}
+
+.row{
+    display:flex;
+    justify-content:space-between;
+    margin:10px 0;
+}
+
+.total{
+    display:flex;
+    justify-content:space-between;
+    font-size:20px;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+.order{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    border:none;
+    background:#28a745;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.order:hover{
+    background:#218838;
+}
