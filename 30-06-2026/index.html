@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Quiz Arena</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="ambient ambient-one" aria-hidden="true"></div>
+	<div class="ambient ambient-two" aria-hidden="true"></div>
+
+	<main class="app-shell">
+		<section class="quiz-frame" aria-label="Interactive quiz application">
+			<header class="app-topbar">
+				<div>
+					<p class="eyebrow">Interactive Challenge</p>
+					<h1>JavaScript Quiz Arena</h1>
+				</div>
+				<div class="topbar-actions">
+					<div class="score-pill" id="bestScorePill">Best: 0%</div>
+				</div>
+			</header>
+
+			<section class="screen welcome-screen" id="welcomeScreen">
+				<div class="hero-mark" aria-hidden="true">?</div>
+				<p class="eyebrow">Welcome</p>
+				<h2>Test your JavaScript knowledge with a polished 10-question quiz.</h2>
+				<p class="screen-copy">
+					Move through one question at a time, keep your answers selected while navigating,
+					and get an instant score when you submit.
+				</p>
+
+				<div class="feature-grid">
+					<article class="feature-card">
+						<span class="feature-value">10</span>
+						<span class="feature-label">Questions</span>
+					</article>
+					<article class="feature-card">
+						<span class="feature-value">4</span>
+						<span class="feature-label">Choices each</span>
+					</article>
+					<article class="feature-card">
+						<span class="feature-value">0%</span>
+						<span class="feature-label">Score to start</span>
+					</article>
+				</div>
+
+				<button class="start-btn" id="startQuizBtn" type="button">Start Quiz</button>
+			</section>
+
+			<section class="screen quiz-screen is-hidden" id="quizScreen">
+				<div class="quiz-progress-wrap">
+					<div class="progress-meta">
+						<span id="questionCounter">Question 1 of 10</span>
+						<span id="questionPercent">10%</span>
+					</div>
+					<div class="progress-track" aria-hidden="true">
+						<span class="progress-fill" id="progressFill"></span>
+					</div>
+				</div>
+
+				<div class="question-panel">
+					<p class="question-kicker">Choose one answer</p>
+					<h2 id="questionText"></h2>
+					<div class="options-list" id="optionsContainer"></div>
+				</div>
+
+				<div class="controls-row">
+					<button class="nav-btn secondary" id="prevBtn" type="button">Previous</button>
+					<div class="controls-spacer"></div>
+					<button class="nav-btn primary" id="nextBtn" type="button">Next</button>
+					<button class="nav-btn success is-hidden" id="submitBtn" type="button">Submit Quiz</button>
+				</div>
+			</section>
+
+			<section class="screen result-screen is-hidden" id="resultScreen">
+				<div class="result-card">
+					<div class="result-icon" aria-hidden="true">🏆</div>
+					<p class="eyebrow">Quiz Completed</p>
+					<h2 id="resultTitle">Excellent!</h2>
+					<p class="screen-copy" id="resultMessage">
+						Your answers have been scored and your progress is saved.
+					</p>
+
+					<div class="score-ring" aria-label="Final score">
+						<span id="scorePercent">0%</span>
+						<small>Your Score</small>
+					</div>
+
+					<div class="summary-grid">
+						<article class="summary-card">
+							<span class="summary-value" id="totalQuestionsValue">10</span>
+							<span class="summary-label">Total</span>
+						</article>
+						<article class="summary-card good">
+							<span class="summary-value" id="correctAnswersValue">0</span>
+							<span class="summary-label">Correct</span>
+						</article>
+						<article class="summary-card bad">
+							<span class="summary-value" id="wrongAnswersValue">0</span>
+							<span class="summary-label">Wrong</span>
+						</article>
+						<article class="summary-card accent">
+							<span class="summary-value" id="scoreFraction">0/10</span>
+							<span class="summary-label">Final Score</span>
+						</article>
+					</div>
+
+					<p class="performance-message" id="performanceMessage"></p>
+					<button class="restart-btn" id="restartQuizBtn" type="button">Restart Quiz</button>
+				</div>
+			</section>
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
